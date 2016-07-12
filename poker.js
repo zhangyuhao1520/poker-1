@@ -132,6 +132,10 @@ $('.zhuozi .pai').on('click',function(){
    var zIndex=1;
    $('.zhuozi .move-right').on('click',function(){
        zIndex+=1;
+       if($('.zhuozi .pai.zuo').eq(-1).hasClass('chulie')){
+       	$('.zhuozi .pai.zuo').eq(-1).removeClass('chulie');
+       	shangyizhang=null;
+       }
       $('.zhuozi .pai.zuo').eq(-1).removeClass('zuo').addClass('you').animate({top:460,left:520}).css({zIndex:zIndex})
 
    })
