@@ -1,0 +1,54 @@
+ /* .animation{
+ 	width: 100px;
+ 	height: 100px;
+ 	background: red;
+ }
+ .zidan{
+ 	position: absolute;
+ 	left:10px;
+ 	height: 300px;
+ 	border: 1px solid black;
+ 	border-radius: 50%;
+ }  */
+ body{
+ 	background: url(./img/bg.jpg);
+ 	background-size: cover;
+ 	margin: 0;
+ }
+ .zhuozi{
+ 	width: 690px;
+ 	height: 580px;
+ 	position: relative; 	
+ 	margin: 20px auto;
+ 	/*background:rgba(100,30,14,0.5);*/
+ 	/*border-radius: 10px;*/
+ 	/*background: rgba(20,143,241,0.1);*/
+ 	background-size:cover;
+ }
+ .pai{
+ 	width: 90px;
+ 	height: 120px;
+ 	position: absolute;
+ 	left: 300px;
+ 	top: 0;
+ 	background-size: 100% 100%;
+ 	opacity: 0;
+ }
+.zhuozi .move-right,.zhuozi .move-left{
+	cursor: pointer;
+	width: 80px;
+	position: absolute;
+	left:50%;
+	margin-left: -40px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 14px;
+}
+.zhuozi .move-right{
+	bottom:100px;
+	background: orange;
+}
+.zhuozi .move-left{
+	bottom:50px;
+	background: yellow;
+}
