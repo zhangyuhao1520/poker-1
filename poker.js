@@ -43,11 +43,11 @@ var dict={
 };
 for (var i = 0,index=0; i < 7; i++) {
 	for (var j = 0; j <i+1 ; j++) {
-		index+=1;
+		
 	$('<div>')
     .addClass('pai shang')
     .delay(index*100)
-    .css({backgroundImage:'url(img/'+dict[poker[index].number]+poker[index].color+'.png)'})
+    .css({backgroundImage:'url(img/'+dict[poker[index].number]+poker[index].color+'.jpg)'})
     .attr('id',i+'-'+j)
     .data('number',poker[index].number)
     .animate({
@@ -56,7 +56,7 @@ for (var i = 0,index=0; i < 7; i++) {
     	opacity:1
     })
     .appendTo('.zhuozi')
-
+    index+=1;
 	};	
 };
 
@@ -65,7 +65,7 @@ for (; index < poker.length; index++) {
     .addClass('pai zuo')
     .data('number',poker[index].number)
     .delay(index*100)
-    .css({backgroundImage:'url(img/'+dict[poker[index].number]+poker[index].color+'.png)'})
+    .css({backgroundImage:'url(img/'+dict[poker[index].number]+poker[index].color+'.jpg)'})
     .animate({
     	top:460,
     	left:150,
