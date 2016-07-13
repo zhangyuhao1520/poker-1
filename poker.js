@@ -37,7 +37,7 @@ while (poker.length<52) {
 	};
 };
 
-console.table(poker);
+// console.table(poker);
 var dict={
 	1:'A',2:'2',3:'3',4:'4',5:'5',6:'6',7:'7',8:'8',9:'9',10:'T',11:'J',12:'Q',13:'K'
 };
@@ -157,4 +157,22 @@ $('.zhuozi .pai').on('click',function(){
    })
  })
 
+// 开始游戏
+	$('.start').on('click',function(){
+		if($(this).css("display")=="block"){
+			$('.pai').show();
+			$('.move-left').show();
+			$('.move-right').show();
+		}else{
+			$('.this').hide();
+
+		}
+   })
+
+//重新开始
+	$('.break').on('click',function(){
+		if($(this)){
+			poker.push({color:c,number:n});
+		}
+	})
 })
